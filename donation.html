@@ -4,13 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="/index.js"></script>
+    
     <title>BIG FIVE DONATION</title>
 </head>
 <body>
+    <section class="navbar">
+        <nav>
     <h1>
         KWS ZOO DONATIONS
     </h1>
+    <div class="flex gap-medium items-center">
+   <a href="#comments"><span>COMMENTS</span></a>
+<a href="#animal-list"><span>VIEW ANIMAL</span></a>
+<a href="#form"><span>ADD ANIMAL</span></a>
+        </div>
+    </nav>
+    </section>
     <section class="container">
         <form id="form">
             <label for="animal">ANIMAL</label>
@@ -28,14 +37,21 @@
             <button type="submit">ADOPT</button>
 
         </form>
-        <ul id="animal-list" class="cards">
+        <ol id="animal-list" class="cards">
             <!-- the list of animals will go here -->
 
-        </ul>
+        </ol>
 
 
 
     </section>
-    
+    <section id="comments">
+    <h3>
+        COMMENT SECTION
+    </h3>
+
+
+    </section>
+  <script src="/index.js"></script>  
 </body>
 </html>
