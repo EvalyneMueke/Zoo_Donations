@@ -34,14 +34,22 @@ Click the `LOG IN` button to proceed t the animal addition form
 
 Here you will  see a form to add an animal and cards of existing animals and their donations
 
-There will also be two buttons
+There will also be two buttons:
+
 `Donate KES 200` => to donate to an animal
+
 `SET FREE` => to set an animal free
 
 Once the animal is set free its data is erased from the data based but it can be added again using the addition form.
 
+### Built With 
+* Javascript
+* HTML
+* CSS
 
+### License
 
+GNU General Public License
 
 
 
