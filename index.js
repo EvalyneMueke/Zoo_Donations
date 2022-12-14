@@ -1,3 +1,17 @@
+document.querySelector("animal-form").addEventListener('submit',handleSubmit)
+
+//EventHandlers
+function handleSubmit(e){
+    e.preventDefault()
+    let animalObj ={
+        animal:target.animal.value,
+        image:e.target.image.value,
+        fact:e.target.fact.value,
+        donation:0
+    }
+    renderAnAnimal(animalObj)
+}
+
 //Intial call
 
 function renderAnAnimal(animal) {
@@ -9,7 +23,7 @@ function renderAnAnimal(animal) {
     <div class= "content">
     <h4>${animal.animal}</h4>
     <p>
-   KES <span class ="donation-count">${animal.donation}</span>Donated
+   KES<span class ="donation-count">${animal.donation}</span> Donated
    <p>
    <p>${animal.fact}</p>
    </div>
@@ -18,13 +32,10 @@ function renderAnAnimal(animal) {
    <label>Your Name</label>
    <br>
    <input type="text">
-   
    <button class="button">Donation KES200</button>
    <br>
-    </form>
-    <form>
+ <label>Reason To set Free</label>
     <br>
-    <label>Reason To set Free</label>
     <textarea></textarea>
     <br>
     <button class ="button">Set Free</button>
@@ -45,9 +56,7 @@ function renderAnAnimal(animal) {
   .then(BigFive => BigFive.forEach(animal =>renderAnAnimal(animal)))
 
  }
-
-//  function intialize(){
-//     getAnimals()
-//     //BigFive.forEach(animal =>renderAnAnimal(animal))
-//  }
-//  intialize()
+ getAnimals()
+    //BigFive.forEach(animal =>renderAnAnimal(animal))
+ 
+ 
