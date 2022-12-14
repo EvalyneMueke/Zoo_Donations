@@ -1,0 +1,23 @@
+/* Nav bar */
+.flex {
+    display: flex;
+}
+.gap-medium {
+    gap: 2rem;
+}
+.items-center {
+    align-items: center;
+}
+.container {
+    max-width: 90%;
+}
+
+.p-medium {
+    padding: 0.75rem 1rem;
+}
+.justify--between {
+    justify-content: space-between;
+}
+.mx-auto {
+    margin: 0 auto;
+}
