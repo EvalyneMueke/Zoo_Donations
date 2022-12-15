@@ -34,13 +34,6 @@
       "image": "https://images.pexels.com/photos/797677/pexels-photo-797677.jpeg?auto=compress&cs=tinysrgb&w=300",
       "fact": "Their primary predator is lion.They rescue a member of their family who has been caught.",
       "donation": 0
-    },
-    {
-      "animal": "Deer",
-      "image": "https://images.pexels.com/photos/34231/antler-antler-carrier-fallow-deer-hirsch.jpg?auto=compress&cs=tinysrgb&w=300",
-      "fact": "HAs long horns",
-      "donation": 0,
-      "id": 6
     }
   ]
 }
