@@ -11,6 +11,7 @@
     <title>BIG FIVE DONATION</title>
 </head>
 <body>
+
     <section class="navbar">
         <nav  class="flex justify--between items-center container mx-auto p-medium">
     <h1>
@@ -23,10 +24,23 @@
         </div>
     </nav>
     </section>
-
-    
-    
-        <form id="animal-form">
+</header>
+    <div class="parent">
+        <div class="child">
+    <form class="log_in">
+        <label for="name">Name</label>
+        <br>
+        <input type="text">
+        <br>
+        <label for="password">Password</label>
+        <br>
+        <input type="password">
+        <br>
+        <a href="#animal-form"><button>login</button></a>
+    </form>
+        </div>
+    <div class="child" >
+        <form class="animal-form" >
             <label for="animal">animal</label>
             <br>
             <input type="text" id ="animal">
@@ -44,12 +58,12 @@
 
         </form>
         <br>
+        </div>
+        </div>
         <section id="search">
-           <button><label for="search">Search</label></button>
-        <input type="text" placeholder ="Search animal here" id="searchbar">
-        <br>
-        <br>
-        </section>
+            <!-- Search bar to go here -->
+             </section>
+             <br>
         <ol id="animal-list" class="cards">
             <!-- the list of animals will go here -->
 
