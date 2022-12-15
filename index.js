@@ -1,3 +1,8 @@
+document.addEventListener('DOMContentLoaded',() =>{
+
+
+
+
 //Event Listeners
 document.querySelector("#animal-form").addEventListener('submit',
 handleSubmit)
@@ -147,7 +152,7 @@ function deleteAnimal(id){
 
  //Searchbar
  var search = document.createElement('div');
- search.innerHTML = '<input type="text" id="search" placeholder="Search...">';
+ search.innerHTML = '<input type="text" id="search" placeholder="Search Animal Here">';
  document.querySelector('#search').appendChild(search);
  var searchResults = document.createElement('div');
  searchResults.innerHTML = '<ul id="searchResults"></ul>';
@@ -164,4 +169,27 @@ function deleteAnimal(id){
    searchResultsList.appendChild(searchResultsListItem);
    searchResultsListItem.innerHTML = 'http://localhost:3000/BigFive/${animalObj.animal}' + searchValue ;
  });
+
+
+ //Add alert upon submitting a comment
+
+//  let submit =document.querySelector('#submit')
+//  let comment_area=document.querySelector('#comment-area')
+//  submit.addEventListener('click',checkValidComment())
+
+ 
+//  function checkValidComment(){
+
+//     if (comment_area.input !== " ") {
+    
+//         return alert("Enter a valid comment")
+//     }
+//     else{
+//         alert("Thank you for the comment")
+//     }
+//  }
+
+
+
+})
 
