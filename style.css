@@ -1,3 +1,31 @@
+:root {
+    --colorone: #004B23;
+    --colorTwo: #006400;
+    --colorThree: #007200;
+    --colorFour: #008000;
+    --colorFive: #38B000;
+    --colorSix: #70E000;
+    --colorSeven: #9EF01A;
+    --colorEight:#CCFF33;
+  }
+
+
+
+
+
+
+
+/* universal styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+
+    
+}
+
+
 /* Nav bar */
 .flex {
     display: flex;
@@ -20,4 +48,25 @@
 }
 .mx-auto {
     margin: 0 auto;
+}
+
+
+
+
+
+
+/* Footer */
+.text-center {
+    text-align: center;
+  }
+.card{
+    background-color:var();
+    padding: 100px;
+}
+.content{
+    
+    padding: 20px;
+    
+    width: 60%;
+
 }
