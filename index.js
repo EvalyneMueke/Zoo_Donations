@@ -65,10 +65,10 @@ function renderAnAnimal(animal) {
         updateDonation(animal)
 
     })
-// //Add event listener to the Send to park button to delete animal from zoo
-// card.querySelector("#set_free").addEventListener("click",()=>{
-//     card.innerHTML=''
-// })
+//Add event listener to the Send to park button to delete animal from zoo
+card.querySelector("#set_free").addEventListener("click",()=>{
+    card.innerHTML=''
+})
 
 
     
