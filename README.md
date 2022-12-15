@@ -30,9 +30,13 @@ Run npm install to install dependancies
 ### Running the code
 
 Open donation.html using Live Server
-Click the `LOG IN` button to proceed t the animal viewing of the animal form
+Click the `LOG IN` button to proceed to the animal viewing page.
 
-Here you will  see a form to add an animal and cards of existing animals and their donations
+Ensure the local server is up and running.
+
+Run `json-server --watch db.json` in the terminal
+
+ Upon running the serveryou will  see a form to add an animal and cards of existing animals and their donations
 
 When adding an animal is most prefferable to get the image url from`https://images.pexels.com`
 
