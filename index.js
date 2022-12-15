@@ -23,14 +23,16 @@ function renderAnAnimal(animal) {
     let card = document.createElement('li')
     card.className='card'
     card.innerHTML =`
-    <img src="${animal.image}">
     <div class= "content">
+    <img src="${animal.image}">
+    
     <h4>${animal.animal}</h4>
+    <br>
     <p>
    KES<span class ="donation-count">${animal.donation}</span> Donated
    <p>
+   <br>
    <p>${animal.fact}</p>
-   </div>
    <br>
    <form>
    <label>Your Name</label>
@@ -67,12 +69,17 @@ function renderAnAnimal(animal) {
     })
 //Add event listener to the Send to park button to delete animal from zoo
 card.querySelector("#set_free").addEventListener("click",()=>{
-    card.innerHTML=''
+    card.remove()
+    deleteAnimal(animal.id)
+
 })
 
 
     
 }
+
+
+//FUNTIONS
 
 //Function to fetch data from BigFive
  function getAnimals(){
@@ -99,6 +106,7 @@ card.querySelector("#set_free").addEventListener("click",()=>{
  //Patch request to update the donation amount
 
 function updateDonation(animalObj){
+    updateDonation.preventDefault()
     
     fetch(`http://localhost:3000/BigFive/${animalObj.id}`,{
         method:'PATCH',
@@ -111,7 +119,22 @@ function updateDonation(animalObj){
     .then(res =>res.json())
     .then(animal =>console.log(animal))
 }
+
+
 //Delete to be set on set free
+
+function deleteAnimal(id){
+
+    
+ fetch(`http://localhost:3000/BigFive/${id}`,{
+    method:'DELETE',
+    header:{
+        'Content-Type':'application/json'
+    }
+ })
+ .then(res=>res.json())
+ .then(animal =>console.log(animal))
+}
  
 
 

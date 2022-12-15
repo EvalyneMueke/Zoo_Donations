@@ -70,3 +70,17 @@
     width: 60%;
 
 }
+.parent{
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-gap: 20px; 
+    border: 1px solid black;
+    background-color: var(--colorSix);
+
+     
+}
+.child{
+    margin: 10px; 
+    background-color: var(--colorFour);
+    padding-left: 10px; 
+}
