@@ -46,12 +46,18 @@ There will also be two buttons:
 
 `SET FREE` => to set an animal free
 
-Once the animal is set free its data is erased from the data based but it can be added again using the addition form.
+Once the animal is set free its data is erased from the database but it can be added again using the addition form.
 
 ### Built With 
 * Javascript
 * HTML
 * CSS
+
+### Project Documentation
+The following a documentation of my project
+
+https://docs.google.com/document/d/1BQe7SqrbGJ_8Z0l0H2FSxPcfQkvljheMl2AeOagy0xQ/edit?usp=sharing
+
 
 ### License
 
