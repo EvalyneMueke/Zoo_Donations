@@ -11,6 +11,7 @@ function handleSubmit(e){
         fact:e.target.fact.value,
         donation: 0
     }
+    
     renderAnAnimal(animalObj)
     adoptAnimal(animalObj)
 }
@@ -35,24 +36,40 @@ function renderAnAnimal(animal) {
    <label>Your Name</label>
    <br>
    <input type="text">
-   <button class="button" id="donate">Donation KES200</button>
+   <button class="button" id="donate" type="button" >Donation KES200</button>
    <br>
- <label>Reason To set Free</label>
+ <label>Reason To send To a Park</label>
     <br>
     <textarea></textarea>
     <br>
-    <button class ="button" id="set_free">Set Free</button>
-
+    <button class ="button" id="set_free" type="button">Send to The Park</button>
+ <br>
+ <br>
     </form>
     </div>
     `
 
- //Add an event listener to every donate button which will be used during updating the donations
-    card.querySelector("#donate").addEventListener("click",() =>console.log('click'))
-
-
     //add the animal card to the Dom
     document.querySelector('#animal-list').appendChild(card)
+
+
+
+ //Add an event listener to every donate button which will be used during updating the donations
+ //Increment the donations by 200 everytime it is clicked
+    card.querySelector("#donate").addEventListener("click",() =>{
+        animal.donation +=200
+        card.querySelector('span').textContent =animal.donation
+
+
+
+        updateDonation(animal)
+
+    })
+// //Add event listener to the Send to park button to delete animal from zoo
+// card.querySelector("#set_free").addEventListener("click",()=>{
+//     card.innerHTML=''
+// })
+
 
     
 }
@@ -81,8 +98,20 @@ function renderAnAnimal(animal) {
  }
  //Patch request to update the donation amount
 
+function updateDonation(animalObj){
+    
+    fetch(`http://localhost:3000/BigFive/${animalObj.id}`,{
+        method:'PATCH',
+        header:{
+            'Content-Type':'application/json'
+        },
+        body: JSON.stringify(animalObj)
 
-
+    })
+    .then(res =>res.json())
+    .then(animal =>console.log(animal))
+}
+//Delete to be set on set free
  
 
 
@@ -91,3 +120,25 @@ function renderAnAnimal(animal) {
     //BigFive.forEach(animal =>renderAnAnimal(animal))
  }
  intialize()
+
+
+ //Searchbar
+ var search = document.createElement('div');
+ search.innerHTML = '<input type="text" id="search" placeholder="Search...">';
+ document.querySelector('#search').appendChild(search);
+ var searchResults = document.createElement('div');
+ searchResults.innerHTML = '<ul id="searchResults"></ul>';
+ document.body.appendChild(searchResults);
+ var search = document.getElementById('search');
+ var searchResults = document.getElementById('searchResults');
+ search.addEventListener('keyup', function(e) {
+   var searchValue = e.target.value;
+   var searchResults = document.getElementById('searchResults');
+   searchResults.innerHTML = '';
+   var searchResultsList = document.createElement('ul');
+   searchResults.appendChild(searchResultsList);
+   var searchResultsListItem = document.createElement('li');
+   searchResultsList.appendChild(searchResultsListItem);
+   searchResultsListItem.innerHTML = 'http://localhost:3000/BigFive/${animalObj.animal}' + searchValue ;
+ });
+
