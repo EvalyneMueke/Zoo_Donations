@@ -29,10 +29,12 @@ Run npm install to install dependancies
 
 ### Running the code
 
-Open index.html using Live Server
-Click the `LOG IN` button to proceed t the animal addition form
+Open donation.html using Live Server
+Click the `LOG IN` button to proceed t the animal viewing of the animal form
 
 Here you will  see a form to add an animal and cards of existing animals and their donations
+
+When adding an animal is most prefferable to get the image url from`https://images.pexels.com`
 
 There will also be two buttons:
 
