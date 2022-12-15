@@ -23,23 +23,33 @@
         </div>
     </nav>
     </section>
-    <section class="container">
-        <form id="form">
-            <label for="animal">ANIMAL</label>
+
+    
+    
+        <form id="animal-form">
+            <label for="animal">animal</label>
             <br>
-            <input type="text" id ="name">
+            <input type="text" id ="animal">
             <br>
-            <label for="animal">IMAGE URL</label>
+            <label for="animal">image</label>
             <br>
-            <input type="text" id="image_url">
+            <input type="text" id="image">
             <br>
-            <label for="fact">SIMPLE FACT</label>
+            <label for="fact">fact</label>
             <br>
             <textarea name="fact" id="fact"></textarea>
             <br>
-            <button type="submit">ADOPT</button>
+            <button type="submit" id="animal-form">ADOPT</button>
+            <br>
 
         </form>
+        <br>
+        <section id="search">
+           <button><label for="search">Search</label></button>
+        <input type="text" placeholder ="Search animal here" id="searchbar">
+        <br>
+        <br>
+        </section>
         <ol id="animal-list" class="cards">
             <!-- the list of animals will go here -->
 
@@ -47,20 +57,20 @@
 
 
 
-    </section>
+        
     <section id="comments">
     <h3>
         COMMENT SECTION
     </h3>
     <p>Your Comment will be highly appreciated to make the Zoo better.</p>
-    <h4>Enter Your Comment BElow</h4>
+    <h4>Enter Your Comment Below</h4>
     <textarea id="comment-area"></textarea>
 
 
     </section>
 
     <footer class="footer">
-        <p class="text-center">Copyright &copy; Devpractical.com</p>
+        <p class="text-center">Copyright &copy; KWS ZOO 2022</p>
 
     </footer>
   <script src="/index.js"></script>  
