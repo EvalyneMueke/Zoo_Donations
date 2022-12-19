@@ -167,7 +167,7 @@ function deleteAnimal(id){
    searchResults.appendChild(searchResultsList);
    var searchResultsListItem = document.createElement('li');
    searchResultsList.appendChild(searchResultsListItem);
-   searchResultsListItem.innerHTML = 'http://localhost:3000/BigFive/${animalObj.animal}' + searchValue ;
+   searchResultsListItem.innerHTML = 'http://localhost:3000/BigFive/' + searchValue ;
  });
 
 
