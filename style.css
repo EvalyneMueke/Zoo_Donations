@@ -2,11 +2,11 @@
     --colorone: #004B23;
     --colorTwo: #006400;
     --colorThree: #007200;
-    --colorFour: #008000;
-    --colorFive: #38B000;
-    --colorSix: #70E000;
-    --colorSeven: #9EF01A;
-    --colorEight:#CCFF33;
+    --colorFour:#5F7470 ;
+    --colorFive:#889696 ;
+    --colorSix: #B8BDB5 ;
+    --colorSeven:#D2D4C8 ;
+    --colorEight:#E0E2DB;
   }
 
 
@@ -70,7 +70,7 @@
     padding-left: 100px;
  padding-bottom: 20px;
 
- background-color:var(--colorTwo);
+ background-color: lightgoldenrodyellow;
     
 
 }
@@ -97,19 +97,32 @@
     padding-left: 10px; 
 }
 .navbar{
-    background-color: var(--colorTwo);
+    background-color: lightgrey;
+    color:white;
+
 }
 
 #comments{
-    background-color: var(--colorThree);
+    background-color: lightblue;
 
-    color: aqua;
+    
     text-align: center;
     height: 200px;
 }
 #comment-area{
     height:100px
 }
+#search::placeholder{
+    color:#7378c5
+  }
+  #search:focus{
+    background-color: #050505;
+    outline:none;
+  }
+
+
+
+
 #search{
     padding-left: 200px;
     padding-top: 10px;
@@ -120,8 +133,4 @@
 h1{
     font-size: 30px;
     font-style: italic;
-}
-span{
-    color: antiquewhite;
-    
 }
