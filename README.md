@@ -29,7 +29,7 @@ Run npm install to install dependancies
 
 ### Running the code
 
-Open donation.html using Live Server
+Open index.html using Live Server
 Click the `LOG IN` button to proceed to the animal viewing page.
 
 Ensure the local server is up and running.
