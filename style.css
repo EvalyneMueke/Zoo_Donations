@@ -112,13 +112,13 @@
 #comment-area{
     height:100px
 }
-#search::placeholder{
+/* #search::placeholder{
     color:#7378c5
   }
   #search:focus{
     background-color: #050505;
     outline:none;
-  }
+  } */
 
 
 
