@@ -138,7 +138,7 @@ document.addEventListener("DOMContentLoaded", () => {
           if (data.length != 0) {
             const resultsContainer =
               document.getElementById("resultsContainer");
-            resultsContainer.className = "card";
+            resultsContainer.className = "card resultcard";
             for (item of data) {
               const resultDetails = `
                     <img src="${item.image}">
@@ -172,7 +172,7 @@ document.addEventListener("DOMContentLoaded", () => {
           }
           else{
             const resultsContainer=document.getElementById('resultsContainer')
-            resultsContainer.className='card'
+            resultsContainer.className='card resultcard'
             const notFoundMessage =`<h2> Sorry,Animal not in  the zoo</h2>`
             resultsContainer.innerHTML=notFoundMessage
           }
